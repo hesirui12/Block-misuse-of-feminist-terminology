@@ -1,12 +1,12 @@
 {
     "manifest_version": 3,
-    "name": "屏蔽女权滥用词汇插件",
-    "version": "1.1",
+    "name": "不良女拳替换插件",
+    "version": "1.0",
+    "description": "自动替换网页中的女拳词为***",
     "permissions": ["storage"],
     "content_scripts": [{
       "matches": ["<all_urls>"],
-      "js": ["content.js"],
+      "js": ["sensitive-words.js", "content-script.js"],
       "run_at": "document_end"
-    }],
-    "options_page": "options.html"
-  }
+    }]
+}
